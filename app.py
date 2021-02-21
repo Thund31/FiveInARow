@@ -216,8 +216,8 @@ Button(infoFrame, text="开始游戏", command=startGame).grid(row=0, column=2, 
 Button(infoFrame, text="认输", command=forfeit).grid(row=0, column=4, padx=5)
 
 # timer setup
-blackTime = 1*60
-whiteTime = 1*60
+blackTime = 5*60
+whiteTime = 5*60
 lblBlackTime = Label(infoFrame, text="黑方剩余时间：%02d:%02d" % (blackTime // 60, blackTime % 60))
 lblBlackTime.grid(row=0, column=1, padx=5)
 lblWhiteTime = Label(infoFrame, text="白方剩余时间：%02d:%02d" % (whiteTime // 60, whiteTime % 60))
